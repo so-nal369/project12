@@ -1,0 +1,430 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+/* App.css */
+
+body {
+  background-color: #f4f6f8;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* container */
+.app-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* patient list card */
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* patient text */
+.list p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+/* delete button */
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+/* AddPatient.css */
+
+.form-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-container input {
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.form-container input:focus {
+  border-color: #007bff;
+}
+
+.add-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: #0056b3;
+}
+/* UpdatePatientForm.css */
+
+.update-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  margin-bottom: 25px;
+}
+
+.update-container h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.update-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.update-container input {
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.update-container input:focus {
+  border-color: #2ecc71;
+}
+
+.update-btn {
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.update-btn:hover {
+  background-color: #27ae60;
+}
+
+.cancel-btn {
+  background-color: #bdc3c7;
+  color: #333;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancel-btn:hover {
+  background-color: #95a5a6;
+}
+/* Edit button */
+.edit-btn {
+  background-color: #2ecc71;
+  color: #ffffff;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.edit-btn:hover {
+  background-color: #27ae60;
+}
+.view-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.view-card {
+  background: white;
+  padding: 25px;
+  width: 350px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.view-card h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.view-card p {
+  margin: 8px 0;
+  font-size: 15px;
+}
+
+.close-btn {
+  margin-top: 15px;
+  width: 100%;
+  padding: 8px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  background-color: #2980b9;
+}
+
+.view-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+.view-btn:hover {
+  background-color: #2980b9;
+}
+/* AddAppointment.css */
+
+.appointment-form {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.appointment-form h2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.appointment-form form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.appointment-form select,
+.appointment-form input {
+  flex: 1;
+  min-width: 180px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.appointment-form select:focus,
+.appointment-form input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.appointment-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.appointment-form button:hover {
+  background-color: #2980b9;
+}
+.view-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.view-card {
+  background: #fff;
+  padding: 25px;
+  width: 360px;
+  border-radius: 8px;
+}
+
+.view-card h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.view-card p {
+  margin: 6px 0;
+}
+
+.close-btn {
+  width: 100%;
+  margin-top: 15px;
+  padding: 8px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.view-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.view-btn:hover {
+  background-color: #2980b9;
+}
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+.list select {
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 8px;
+}
+.login-container {
+  width: 350px;
+  margin: 100px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logout-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #e60000;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
